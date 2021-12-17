@@ -1,5 +1,10 @@
+.pricing-fondo{
+    background-color: var(--fondoColor);
+}
 .pricing {
+    padding: 50px 0px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -13,6 +18,75 @@
     background-color: var(--blueColor);
     opacity: 0.5;
 }
+.pricing h1 {
+    margin: auto;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+.pricing #tabs {
+    width: 80%;
+    background-color: var(--darkColor);
+}
+.pricing #tabs ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;    
+}
+.pricing #tabs li {
+    cursor: pointer;
+    border: black 1px solid;
+    padding: 30px 60px;
+}
+.pricing #tabs ul li a{
+    text-decoration: none;
+    text-decoration: none;
+    font-family: var(--parFont);
+    font-size: 20px;
+    color: var(--blueColor);
+    font-weight: 600;
+}
+.pricing .contenedor-tabs {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    padding: 20px 0px;
+}
+.pricing .contenedor-tabs ul {
+    margin-top: 15px;
+    line-height: 30px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    font-family: var(--parFont);
+}
+.pricing article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.pricing i {
+    color: var(--blueColor);
+    font-size: 16px;
+}
+.pricing .btn {
+    margin-top: 20px;
+    background-color: var(--blueColor);
+    color: var(--darkColor);
+}
+.pricing p{
+    text-decoration: none;
+    color: white;
+}
+.pricing .active{
+    color:white;
+    border-bottom: white 1px solid;  
+}
+
 @media(max-width:390px){
 
 }

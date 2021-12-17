@@ -203,7 +203,7 @@
                 </article>
                 <article id="cuadro-servicios-dark">
                     <span id="icono-claro" class="animacion">
-                        <i class="fas fa-broom"></i>
+                        <i class="fas fa-quidditch"></i>
                     </span>
                     <h3>Platforms</h3>
                     <p>Where glass is found are window cleaners, 
@@ -249,9 +249,84 @@
         </div>
     </section>
     
-    <section class="ancho-ajuste">
-        <div class="pricing">
-
+    <section class="pricing-fondo">
+        <div class="ancho-ajuste pricing">
+            <h1>Our Pricing</h1>
+            <div id="tabs">
+                <ul>
+                    <li><a id="btn1" href="#op1" class="link">Silver Plan</a></li>
+                    <li><a href="#op2" class="link">Gold Plan</a></li>
+                    <li><a href="#op3" class="link">Diamond Plan</a></li>
+                </ul>
+            </div>
+            <div id="contenedor_tabs" class="contenedor-tabs">
+                <article id="op1">
+                    <h3>$100</h3>
+                    <p>One Time Installation</p>
+                    <ul>
+                        <li>
+                            <i class="fas fa-check"></i> Interior Window Cleaning
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Office Partition Glass
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Dusting High Areas
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> All Windows Types
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Gutter Cleaning
+                        </li>
+                    </ul>
+                    <a href="#" class="btn hvr-rectangle-out">PURCHASE NOW</a>
+                </article>
+                <article id="op2">
+                    <h3>$120</h3>
+                    <p>One Time Installation</p>
+                    <ul>
+                        <li>
+                            <i class="fas fa-check"></i> Exterior Cleaning
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Office Partition Glass
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Dusting High Areas
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> All Windows Types
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Gutter Cleaning
+                        </li>
+                    </ul>
+                    <a href="#" class="btn hvr-rectangle-out">PURCHASE NOW</a>
+                </article>
+                <article id="op3">
+                    <h3>$180</h3>
+                    <p>One Time Installation</p>
+                    <ul>
+                        <li>
+                            <i class="fas fa-check"></i> Interior Cleaning
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Exterior Cleaning
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Office Partition Glass
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Dusting High Areas
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i> Cleaning ceiling fans and mirrors
+                        </li>
+                    </ul>
+                    <a href="#" class="btn hvr-rectangle-out">PURCHASE NOW</a>
+                </article>
+            </div>
         </div>
     </section>
 
@@ -290,6 +365,20 @@
         </span>
     </a>
     <script>
+        /* PARTE DE LOS TABS */
+        $("#btn1").addClass("active");
+        $("#contenedor_tabs article").hide();
+        $("#op1").show();
+
+        $(".link").click(function () {
+            $(".link").removeClass("active");
+            $(this).addClass("active");
+            $("#contenedor_tabs article").hide();
+
+            var activar_tab = $(this).attr("href");
+            $(activar_tab).show();
+        });
+
         /* PARTE DE NAV PARA MOVIL */
         $("#menu-movil").click(function () {
           $("#movil-nav").slideToggle();
