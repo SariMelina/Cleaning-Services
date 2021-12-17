@@ -207,6 +207,7 @@
         </span>
     </a>
     <script>
+       /*  PARTE PARA CAMBIAR EL ICONO DEL NAV */
         $('.botonBarras').hover(function () {
             let accordion = $(this);
             let icono  = accordion.children('#icono');
@@ -216,6 +217,8 @@
         $(document).ready(function () {
             $("#slider1").tinycarousel();
         });
+
+       /*  PARTE DEL MODAL  */
         var mostrarmodal = document.getElementById("modal");
         var cerrar = document.getElementById("closebtn");
         var btnejecutar = document.getElementById("show");
@@ -238,11 +241,15 @@
                 mostrarmodal.style.display = "none";
             }
         };
+
+      /*   MOVERSE HACIA ARRIBA CON EL BOTON FIXED */
         var pagetop = $('.btn-desplegar-arriba');
         pagetop.click(function () {
             $('body, html').animate({ scrollTop: 0 }, 500);
             return false;
         });
+
+        /* PARTE DEL ACORDEON */
         $(".acordeon").click(function () {            
             var t = $(this);
             var tp = t.next();
