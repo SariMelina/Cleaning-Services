@@ -1,0 +1,92 @@
+.intro {
+    background-color: var(--fondoColor);
+    position: relative;
+    padding: 50px 0px;
+}
+.intro .viewport {
+    flex-grow: 1;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.intro .overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-left: 20px;
+    height: 100%;
+}
+.intro p{
+    margin: 15px 0px;
+    margin-bottom: 50px;
+    max-width: 600px !important;
+}
+.intro .btn{
+    text-decoration: none;
+    background-color: var(--blueColor);
+}
+.intro .cards {
+    padding: 50px;
+    width: 1200px;    
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.intro figure {
+    max-width: 450px;
+    margin: auto;
+    position: relative;
+}
+.intro .btn-izq {      
+    position: absolute;
+    top: calc(45% - 20px);
+    left: 15px;
+}
+.intro .btn-dere {      
+    position: absolute;
+    top: calc(45% - 20px);
+    right: 15px;
+}
+.intro .redes-section1 {
+    position: absolute;
+    left: calc(5%);
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.intro .redes-section1 a:hover {
+    background-color: var(--blueColor);
+    color: white;
+    transition: .4s;
+}
+.intro .redes-section1 a {
+    color: var(--blueColor);
+    text-decoration: none;
+    border:var(--blueColor) 1px solid;
+    padding: 20px;
+    border-radius: 50%;
+}
+.intro .formato-para-play:hover {
+    color: white;
+    background-color: var(--blueColor);
+    transition: .3s;
+}
+.intro .formato-para-play {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    color: var(--blueColor);
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    border: var(--blueColor) 1px solid;
+}
+@media(max-width:480px){
+    
+}

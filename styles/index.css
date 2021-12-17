@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Asap';
+    src: url('../fonts/Asap.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    /*  FONTS   */
+    --titleFont: 'Asap', sans-serif;
+    --parFont: 'Roboto-Regular', sans-serif;
+    /*  COLOR   */
+    --blueColor : #40C5F2;
+    --darkColor: #222222;
+    --paragraphColor: #686A6F;
+    --grayFooter: #999B9F;
+    --fondoColor: #F7F7F7;
+}
+body {
+    background-color: white;
+}
+h1 {
+    font-family: var(--titleFont);
+    font-size: 50px;
+    color: var(--darkColor);
+    max-width: 250px;
+}
+h3 {
+    font-family: var(--titleFont);
+    font-size: 20px;
+    color: var(--darkColor);
+    max-width: 500px;
+    margin: 10px 0px;
+}
+p {    
+    color: var(--paragraphColor);
+    text-align: left;
+    font-size: 16px;
+    font-family: var(--parFont);
+    max-width: 500px;
+    line-height: 24px;
+}
+.ancho-ajuste {
+    max-width: 1200px;
+    margin: auto;
+}
+b, strong {
+    font-weight: 600px;
+}
+figure img {
+    width: 100%;
+}
+.btn {
+    background-color: var(--blueColor);
+    color: white;
+    font-family: var(--parFont);
+    font-size: 14px;
+    padding: 17px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+}

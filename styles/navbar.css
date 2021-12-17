@@ -1,0 +1,50 @@
+nav {
+    background-color: var(--darkColor);
+}
+nav .nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;        
+}
+nav .hover-nav:hover {
+    transition: 0.3s;
+    color: var(--blueColor);
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--titleFont);
+    font-size: 14px;
+}
+nav .menu-boton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+nav .menu-boton i{
+    border: gray 1px solid;
+    padding: 12px;
+    color: white;
+    font-size: 25px;
+}
+nav .menu-boton .btn{
+    border-radius: 0;
+    background-color: var(--blueColor);
+}
+nav .botonBarras:hover {
+    background-color: rgb(87, 87, 87);
+    color: var(--fondoColor);
+    transition: .4s;
+}
+@media(max-width:480px){
+    
+}

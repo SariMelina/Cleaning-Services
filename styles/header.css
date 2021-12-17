@@ -1,0 +1,63 @@
+header {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header i {
+    background-color: rgb(221, 220, 220);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+header figure {
+    cursor: pointer;
+    max-width: 120px;
+}
+header .container-info-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+header .info-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+header .info-header:hover p{
+    transition: 0.5s;
+    color: var(--blueColor);
+}
+header .info-header:hover b{
+    transition: 0.3s;
+    color: var(--blueColor);
+}
+header .info-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+header p,b {    
+    color: var(--darkColor);
+    text-align: left;
+    line-height: 20px;
+}
+header .info-header .line-info {
+    top: calc(50% - 20px);
+    right: calc(0% - 30px);
+    height: 40px;
+    width: 1px;
+    border-left: rgb(221, 220, 220) 2px solid;
+    position: absolute;
+}
+@media(max-width:480px){
+
+}
