@@ -38,6 +38,11 @@ h3 {
     max-width: 500px;
     margin: 10px 0px;
 }
+h4 {
+    font-family: var(--parFont);
+    font-size: 16px;
+    color: var(--blueColor);
+}
 p {    
     color: var(--paragraphColor);
     text-align: left;
@@ -64,4 +69,10 @@ figure img {
     padding: 17px 30px;
     border-radius: 5px;
     font-weight: 600;
+}
+@media(max-width:390px){
+    .ancho-ajuste {
+        max-width: 390px;
+        margin: auto;
+    }
 }

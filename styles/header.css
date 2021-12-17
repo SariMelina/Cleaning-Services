@@ -58,6 +58,26 @@ header .info-header .line-info {
     border-left: rgb(221, 220, 220) 2px solid;
     position: absolute;
 }
-@media(max-width:480px){
-
+#menu-movil {
+    display: none;
+    text-decoration: none;
+    color: var(--darkColor);
+    border: var(--darkColor) 1px solid;
+    border-radius: 50%;
+}
+@media(max-width:390px){
+    #header-info {
+        display: none;
+    }
+    #menu-movil {
+        display: inline;
+    }
+    header {
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 10px 2px 5px 11px rgba(0, 0, 0, 0.2);
+    }
 }

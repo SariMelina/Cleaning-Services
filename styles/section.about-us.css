@@ -1,0 +1,54 @@
+.about-us {
+    padding: 20px 10px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;   
+    justify-content: center;
+    align-items: center;
+}
+.about-us figure {
+    max-width: 600px;
+}
+.about-us article:hover {
+    box-shadow: 2px 2px 10px 5px var(--darkColor);
+    transition: 0.5s;
+    transform: scaleY(125%);
+    transform: scaleX(110%);
+}
+.about-us h1, h3, .info-aboutUs p {
+    margin: 15px 0px;
+}
+.about-us article {
+    max-width: 450px;
+    margin: 20px 0px;
+    padding: 10px 10px;
+    border: var(--darkColor) 1px solid;
+    position: relative;
+    overflow: hidden;
+}
+.about-us article h3 {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+.about-us article p {
+    display: none;
+}
+.about-us article:hover #mostrar-mas-acordeon{
+    transition: .5s;
+    right: 20px;
+}
+.about-us article #mostrar-mas-acordeon {
+    position: absolute;
+    top: 0;
+    right: -45px;
+    background-color: var(--blueColor);
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+}
+@media(max-width:390px){
+   
+}

@@ -45,6 +45,8 @@ nav .botonBarras:hover {
     color: var(--fondoColor);
     transition: .4s;
 }
-@media(max-width:480px){
-    
+@media(max-width:390px){
+    nav {
+        display: none;
+    }
 }

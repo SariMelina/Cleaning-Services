@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/section1.css">
+    <link rel="stylesheet" href="./styles/section.about-us.css">
     <link rel="stylesheet" href="./styles/modal.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/hover.css">
@@ -21,6 +22,9 @@
         <figure>
             <img src="./images/LogoHeader.png" alt="">
         </figure>
+        <a id="menu-movil" href="#">
+            <i class="fas fa-bars"></i>
+        </a>
         <div id="header-info" class="container-info-header">
             <div class="info-header">
                 <span>
@@ -139,6 +143,35 @@
             <a href="#" class="closebtn" id="closebtn">x</a>    
         </div>           
     </section>
+    <section class="ancho-ajuste about-us">
+        <div class="info-aboutUs">
+            <h4>About Us</h4>
+            <h1>Welcome To Our Winclean Company!</h1>
+            <p>Window cleaning, or window washing, is the exterior 
+                cleaning of architectural glass used for structural, 
+                lighting, or decorative purposes. It can be done manually,
+                 using a variety of tools for cleaning and access.</p>
+
+            <article>
+                <h3 class="acordeon">Window Cleaning</h3>
+                <p>Window cleaning, or window washing, is the exterior cleaning
+                     of architectural glass.
+                </p>
+                <i id="mostrar-mas-acordeon" class="fas fa-chevron-down"></i>
+            </article>
+            <article>
+                <h3 class="acordeon">Roof Washing</h3>
+                <p>
+                    Commercial work is contracted 
+                    variously from in-person transactions for cash.
+                </p>
+                <i id="mostrar-mas-acordeon" class="fas fa-chevron-down"></i>
+            </article>
+        </div>
+        <figure>
+            <img src="./images/FotoAboutUs.jpg" alt="">
+        </figure>
+    </section>
     <footer>
         <div class="ancho-ajuste">
             <div class="footer-row">
@@ -179,7 +212,7 @@
             let icono  = accordion.children('#icono');
             icono.toggleClass('fa-bars fa-arrow-right');
         });      
-        
+
         $(document).ready(function () {
             $("#slider1").tinycarousel();
         });
@@ -210,6 +243,13 @@
             $('body, html').animate({ scrollTop: 0 }, 500);
             return false;
         });
+        $(".acordeon").click(function () {            
+            var t = $(this);
+            var tp = t.next();
+            tp.slideToggle();   
+            var tpotro = tp.next();
+            tpotro.toggleClass("fa-chevron-down fa-chevron-up");                 
+        });    
     </script>
 </body>
 </html>

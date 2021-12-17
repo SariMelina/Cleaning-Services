@@ -72,6 +72,12 @@ footer .parte-de-abajo-footer a{
     font-size: 20px;
     border-radius: 50%;
 }
-@media(max-width:480px){
-    
+@media(max-width:390px){
+    footer .footer-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
 }
