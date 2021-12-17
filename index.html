@@ -63,8 +63,8 @@
         </div>
     </header>
     <nav>
-        <div class="ancho-ajuste nav-container">
-            <div class="nav-options">
+        <div id="movil-nav" class="ancho-ajuste nav-container">
+            <div  class="nav-options">
                 <a class="hover-nav" href="#"><strong>ABOUT</strong></a>
                 <a class="hover-nav" href="#"><strong>SERVICES</strong> </a>
                 <a class="hover-nav" href="#"><strong>GALLERY</strong></a>
@@ -74,7 +74,7 @@
                 <a class="hover-nav" href="#"><strong>BLOG</strong></a>
                 <a class="hover-nav" href="#"><strong>CONTACT</strong></a>
             </div>
-            <div class="menu-boton">
+            <div id="menuyboton" class="menu-boton">
                 <a href="#"  class="botonBarras">
                     <i id="icono" class="fas fa-bars"></i>
                 </a>                
@@ -82,7 +82,6 @@
             </div>
         </div>
     </nav>
-
     <section id="slider1" class="intro">
         <div class="ancho-ajuste">
             <div class="cont_flechas">
@@ -257,6 +256,10 @@
         </span>
     </a>
     <script>
+        /* PARTE DE NAV PARA MOVIL */
+        $("#menu-movil").click(function () {
+          $("#movil-nav").slideToggle();
+        });
        /*  PARTE PARA CAMBIAR EL ICONO DEL NAV */
         $('.botonBarras').hover(function () {
             let accordion = $(this);
