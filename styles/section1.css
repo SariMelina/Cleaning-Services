@@ -52,26 +52,6 @@
     top: calc(45% - 20px);
     right: 15px;
 }
-.intro .redes-section1 {
-    position: absolute;
-    left: calc(5%);
-    bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.intro .redes-section1 a:hover {
-    background-color: var(--blueColor);
-    color: white;
-    transition: .4s;
-}
-.intro .redes-section1 a {
-    color: var(--blueColor);
-    text-decoration: none;
-    border:var(--blueColor) 1px solid;
-    padding: 20px;
-    border-radius: 50%;
-}
 .intro .formato-para-play:hover {
     color: white;
     background-color: var(--blueColor);
