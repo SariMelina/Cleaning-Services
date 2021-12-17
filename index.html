@@ -174,15 +174,15 @@
         </span>
     </a>
     <script>
-        $('.botonBarras').click(function () {
+        $('.botonBarras').hover(function () {
             let accordion = $(this);
             let icono  = accordion.children('#icono');
             icono.toggleClass('fa-bars fa-arrow-right');
         });      
-
+        
         $(document).ready(function () {
-        $("#slider1").tinycarousel();
-      });
+            $("#slider1").tinycarousel();
+        });
         var mostrarmodal = document.getElementById("modal");
         var cerrar = document.getElementById("closebtn");
         var btnejecutar = document.getElementById("show");
@@ -205,6 +205,11 @@
                 mostrarmodal.style.display = "none";
             }
         };
+        var pagetop = $('.btn-desplegar-arriba');
+        pagetop.click(function () {
+            $('body, html').animate({ scrollTop: 0 }, 500);
+            return false;
+        });
     </script>
 </body>
 </html>
