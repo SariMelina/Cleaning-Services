@@ -41,7 +41,7 @@
     max-width: 500px;
     color: var(--darkColor);
 }
-.animacion {
+.our-services .animacion {
     animation: animacionCambio 1s;  
     animation-iteration-count: infinite;
     animation-direction: alternate

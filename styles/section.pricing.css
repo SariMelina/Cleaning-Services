@@ -38,7 +38,6 @@
 }
 .pricing #tabs li {
     cursor: pointer;
-    border: black 1px solid;
     padding: 30px 60px;
 }
 .pricing #tabs ul li a{
@@ -88,5 +87,13 @@
 }
 
 @media(max-width:390px){
-
+    .pricing #tabs ul{
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0px;    
+    }
 }
