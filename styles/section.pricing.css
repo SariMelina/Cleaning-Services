@@ -1,0 +1,18 @@
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing figure .filtro {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 50%;
+    width: 50%;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-color: var(--blueColor);
+    opacity: 0.5;
+}
+@media(max-width:390px){
+
+}

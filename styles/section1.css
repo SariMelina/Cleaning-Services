@@ -68,15 +68,7 @@
     border: var(--blueColor) 1px solid;
 }
 @media(max-width:390px){
-    .intro .overview {
-        display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-        align-items: stretch;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        height: 100%;
+    #slider1 {
+         display: none;
     }
 }
