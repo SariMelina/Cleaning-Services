@@ -41,12 +41,12 @@
     max-width: 500px;
     color: var(--darkColor);
 }
-.our-services .animacion {
-    animation: animacionCambio 1s;  
+.animacion2 {
+    animation: animacionCambio2 1s;  
     animation-iteration-count: infinite;
     animation-direction: alternate
    }
-   @keyframes animacionCambio {
+   @keyframes animacionCambio2 {
        from {
         transform: scaleY(100%);
         transform: scaleX(100%); 
